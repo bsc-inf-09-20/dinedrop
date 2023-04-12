@@ -7,7 +7,7 @@ const config = {
     host: "localhost",
     database: process.env.DATABASE_NAME,
     user: process.env.DATABASE_USER,
-    password: '',
+    password: process.env.DATABASE_PASSWORD,
     connectionLimit: 100,
 
 }
