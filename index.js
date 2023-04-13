@@ -1,18 +1,7 @@
 const express = require('express')
 const app = express()
 
-const bodyParser = require('body-parser')
-// Request Body parsing Middleware
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false }))
 
-const dbConnection = require('./src/utils/mysql.connector')
-
-const {Post} = require('./src/posts/post.model')
-
-// app.get('/api/v1', function (req, res) {
-//     return res.json(req.headers)
-// })
 
 app.get('/api/v1/posts', function (req, res) {
     var sql2 = "SElECT * FROM posts"

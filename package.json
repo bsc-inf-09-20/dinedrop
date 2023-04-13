@@ -25,10 +25,11 @@
   },
   "homepage": "https://github.com/bsc-inf-09-20/dinedrop#readme",
   "dependencies": {
+    "@nestjs/common": "^9.4.0",
+    "@nestjs/core": "^9.4.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.22"
-  },
-  "devDependencies": {}
+  }
 }
